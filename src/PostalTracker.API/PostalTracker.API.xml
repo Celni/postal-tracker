@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>PostalTracker.API</name>
+    </assembly>
+    <members>
+        <member name="M:PostalTracker.API.Controllers.PostalController.GetPostalStatusAsync(System.Guid)">
+            <summary>
+            Get current state postal
+            </summary>
+            <param name="postalId">Postal id</param>
+            <returns>Current state and postal id</returns>
+        </member>
+        <member name="M:PostalTracker.API.Controllers.PostalController.CreatePostalAsync(PostalTracker.API.Models.CreatePostalDto)">
+            <summary>
+            Create new postal
+            </summary>
+            <param name="postalDto">Postal model</param>
+            <returns></returns>
+        </member>
+        <member name="M:PostalTracker.API.Controllers.PostalController.PayPostalAsync(System.Guid)">
+            <summary>
+            Postal payment
+            </summary>
+            <param name="postalId">Postal id</param>
+            <returns></returns>
+        </member>
+        <member name="M:PostalTracker.API.Controllers.PostalController.ReceivePostalAsync(System.Guid)">
+            <summary>
+            Receive postal
+            </summary>
+            <param name="postalId">Postal id</param>
+            <returns></returns>
+        </member>
+        <member name="M:PostalTracker.API.Controllers.PostalController.LostPostalAsync(System.Guid)">
+            <summary>
+            Lost postal
+            </summary>
+            <param name="postalId">Postal id</param>
+            <returns></returns>
+        </member>
+        <member name="M:PostalTracker.API.Controllers.PostalController.ReturnPostalAsync(System.Guid)">
+            <summary>
+            Return postal
+            </summary>
+            <param name="postalId">Postal id</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

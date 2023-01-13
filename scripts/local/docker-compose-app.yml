@@ -1,0 +1,57 @@
+﻿version: "3.5"
+
+services:
+  pt-postgresql:
+    container_name: pt-postgresql
+    image: postgres:12.2
+    ports:
+      - 5432:5432
+    volumes:
+      - /data/db
+    environment:
+      POSTGRES_USER: POSTGRES_USER
+      POSTGRES_PASSWORD: POSTGRES_PASSWORD
+      POSTGRES_DB: POSTGRES_DB
+    networks:
+      - pt-net
+
+  pt-rabbit:
+    container_name: pt-rabbit
+    image: rabbitmq:3.8-management
+    environment:
+      RABBITMQ_DEFAULT_USER: guest
+      RABBITMQ_DEFAULT_PASS: guest
+    ports:
+      - 15672:15672
+    networks:
+      - pt-net
+      
+  pt-orchestrator:
+    container_name: pt-orchestrator
+    build:
+      context: ../../src
+      dockerfile: PostalTracker.Orchestrator.Host/Dockerfile
+    depends_on:
+      - pt-postgresql
+      - pt-rabbit
+    networks:
+      - pt-net
+
+  pt-frontend:
+    container_name: pt-frontend
+    build:
+      context: ../../src
+      dockerfile: PostalTracker.API/Dockerfile
+    ports:
+      - 9000:80
+    environment:
+      - ASPNETCORE_URLS=http://+:80
+    depends_on:
+      - pt-orchestrator
+      - pt-rabbit
+    networks:
+      - pt-net
+
+networks:
+  pt-net:
+    driver: bridge

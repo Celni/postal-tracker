@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PostalTracker.API", "PostalTracker.API\PostalTracker.API.csproj", "{1A8C666D-D73B-47D8-B97D-AD414064A734}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PostalTracker.Contracts", "PostalTracker.Contracts\PostalTracker.Contracts.csproj", "{2E4D1489-C96C-4419-BC84-AFEE8EC37A73}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PostalTracker.System", "PostalTracker.System\PostalTracker.System.csproj", "{F6AF0EB3-5256-4ABC-8B00-C31B6EA63311}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PostalTracker.Orchestrator.Host", "PostalTracker.Orchestrator.Host\PostalTracker.Orchestrator.Host.csproj", "{49148DD3-0B5F-40E0-8D36-2917B9C710D6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1A8C666D-D73B-47D8-B97D-AD414064A734}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A8C666D-D73B-47D8-B97D-AD414064A734}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A8C666D-D73B-47D8-B97D-AD414064A734}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A8C666D-D73B-47D8-B97D-AD414064A734}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E4D1489-C96C-4419-BC84-AFEE8EC37A73}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E4D1489-C96C-4419-BC84-AFEE8EC37A73}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E4D1489-C96C-4419-BC84-AFEE8EC37A73}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E4D1489-C96C-4419-BC84-AFEE8EC37A73}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F6AF0EB3-5256-4ABC-8B00-C31B6EA63311}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6AF0EB3-5256-4ABC-8B00-C31B6EA63311}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6AF0EB3-5256-4ABC-8B00-C31B6EA63311}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6AF0EB3-5256-4ABC-8B00-C31B6EA63311}.Release|Any CPU.Build.0 = Release|Any CPU
+		{49148DD3-0B5F-40E0-8D36-2917B9C710D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49148DD3-0B5F-40E0-8D36-2917B9C710D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49148DD3-0B5F-40E0-8D36-2917B9C710D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49148DD3-0B5F-40E0-8D36-2917B9C710D6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
